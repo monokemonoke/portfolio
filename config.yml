@@ -1,5 +1,5 @@
 baseURL: 'https://monokemonoke.github.io/profile/'
-publishDir: Docs
+publishDir: docs
 languageCode: ' ja-jp'
 title: monokemonoke
 theme: PaperMod
