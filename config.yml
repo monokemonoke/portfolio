@@ -1,4 +1,4 @@
-baseURL: 'https://monokemonoke.github.io/profile/'
+baseURL: 'https://monokemonoke.github.io/portfolio/'
 publishDir: docs
 languageCode: ' ja-jp'
 title: monokemonoke
