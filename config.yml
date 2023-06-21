@@ -1,0 +1,13 @@
+baseURL: 'http://example.org/'
+languageCode: ' ja-jp'
+title: monokemonoke
+theme: PaperMod
+
+params:
+  profileMode:
+      enabled: True
+      title: monokemonoke
+      imageUrl: profile.jpg
+      imageWidth: 200
+      imageHeight: 200
+      imageTitle: monokemonoke's image
