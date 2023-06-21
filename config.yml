@@ -1,4 +1,5 @@
-baseURL: 'http://example.org/'
+baseURL: 'https://monokemonoke.github.io/profile/'
+publishDir: Docs
 languageCode: ' ja-jp'
 title: monokemonoke
 theme: PaperMod
