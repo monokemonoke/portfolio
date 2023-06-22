@@ -4,7 +4,17 @@ languageCode: ' ja-jp'
 title: monokemonoke
 theme: PaperMod
 
+enableEmoji: true
+enableRobotsTXT: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
 params:
+  assets:
+    favicon: profile.jpg
+    
   profileMode:
       enabled: True
       title: monokemonoke
