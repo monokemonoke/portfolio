@@ -22,3 +22,9 @@ params:
       imageWidth: 200
       imageHeight: 200
       imageTitle: monokemonoke's image
+
+  socialIcons:
+    - name: github
+      url: https://github.com/monokemonoke
+    - name: twitter
+      url: https://twitter.com/monokemonoke
