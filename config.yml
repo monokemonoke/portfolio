@@ -12,6 +12,9 @@ minify:
   minifyOutput: true
 
 params:
+  ShowBreadCrumbs: true
+  showCodeCopyButtons: true
+
   assets:
     favicon: profile.jpg
     
@@ -28,3 +31,11 @@ params:
       url: https://github.com/monokemonoke
     - name: twitter
       url: https://twitter.com/monokemonoke
+
+menu:
+  main:
+    - identifier: profile
+      name: profile
+      pageRef: profile
+      url: profile
+      weight: 5
