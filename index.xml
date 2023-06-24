@@ -6,5 +6,14 @@
     <description>Recent content on monokemonoke</description>
     <generator>Hugo -- gohugo.io</generator>
     <language> ja-jp</language><atom:link href="https://monokemonoke.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Profile</title>
+      <link>https://monokemonoke.github.io/portfolio/profile/</link>
+      <pubDate>Sat, 24 Jun 2023 21:10:23 +0900</pubDate>
+      
+      <guid>https://monokemonoke.github.io/portfolio/profile/</guid>
+      <description>About monokemonoke は情報学を学ぶ大学生です。 ピアノと睡眠を好みます。</description>
+    </item>
+    
   </channel>
 </rss>
