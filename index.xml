@@ -15,5 +15,14 @@
       <description>About  monokemonoke は情報学を学ぶ大学生です。 ピアノと睡眠を好みます。  Education  筑波大学大学院情報理工学医プログラム博士前期課程2年 知識・データ工学研究室所属  </description>
     </item>
     
+    <item>
+      <title>同じ会社を、どう見つける？ ― 名寄せの小さな教科書</title>
+      <link>https://monokemonoke.github.io/portfolio/works/preview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://monokemonoke.github.io/portfolio/works/preview/</guid>
+      <description>名寄せについて調べて作成した、独立表示のHTML教材です。</description>
+    </item>
+    
   </channel>
 </rss>

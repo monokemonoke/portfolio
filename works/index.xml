@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>HTML作品 on monokemonoke</title>
+    <link>https://monokemonoke.github.io/portfolio/works/</link>
+    <description>Recent content in HTML作品 on monokemonoke</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language> ja-jp</language><atom:link href="https://monokemonoke.github.io/portfolio/works/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>同じ会社を、どう見つける？ ― 名寄せの小さな教科書</title>
+      <link>https://monokemonoke.github.io/portfolio/works/preview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://monokemonoke.github.io/portfolio/works/preview/</guid>
+      <description>名寄せについて調べて作成した、独立表示のHTML教材です。</description>
+    </item>
+    
+  </channel>
+</rss>

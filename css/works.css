@@ -1,0 +1,202 @@
+/* HTML作品一覧と表示用シェルのスタイル。作品本体はiframe内で分離する。 */
+.works-index {
+    max-width: 800px;
+    margin: 4rem auto 1rem;
+}
+
+.works-index__header {
+    margin-bottom: 1.5rem;
+}
+
+.works-index__header h1,
+.works-index__header h2 {
+    margin-bottom: .5rem;
+}
+
+.works-index__header h1 a,
+.works-index__header h2 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.works-index__header p,
+.works-card p {
+    color: var(--content, #4a4a4a);
+}
+
+.works-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.works-card {
+    position: relative;
+    padding: 1.25rem 1.4rem;
+    border: 1px solid var(--border, #e5e5e5);
+    border-radius: 12px;
+    background: var(--entry, #fff);
+    color: var(--primary, #222);
+}
+
+.works-card h3 {
+    margin: 0 0 .5rem;
+    font-size: 1.15rem;
+}
+
+.works-card h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.works-card p {
+    margin: 0 0 .8rem;
+}
+
+.works-card__link {
+    font-size: .95rem;
+    color: inherit;
+    font-weight: 600;
+}
+
+.works-card h3 a:hover,
+.works-card__link:hover,
+.works-index__header h1 a:hover,
+.works-index__header h2 a:hover {
+    color: #6ea8e5;
+}
+
+.works-empty {
+    color: var(--secondary, #666);
+}
+
+.works-shell {
+    --shell-bg: #f7f7f7;
+    --shell-surface: #fff;
+    --shell-text: #222;
+    --shell-muted: #666;
+    --shell-border: #ddd;
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    background: var(--shell-bg);
+    color: var(--shell-text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.works-shell__header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .85rem max(1rem, calc((100vw - 1100px) / 2));
+    border-bottom: 1px solid var(--shell-border);
+    background: color-mix(in srgb, var(--shell-bg) 92%, transparent);
+    backdrop-filter: blur(10px);
+}
+
+.works-shell__header a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.works-shell__brand {
+    font-weight: 700;
+}
+
+.works-shell__header nav {
+    display: flex;
+    gap: 1rem;
+    color: var(--shell-muted);
+    font-size: .95rem;
+}
+
+.works-shell__main {
+    width: min(100% - 2rem, 1100px);
+    margin: 0 auto;
+}
+
+.works-shell .works-index {
+    margin-top: 3rem;
+}
+
+.works-shell .works-card {
+    background: var(--shell-surface);
+}
+
+.works-viewer {
+    padding: 1.5rem 0 2rem;
+}
+
+.works-viewer__topline {
+    margin-bottom: 1rem;
+}
+
+.works-back-link {
+    display: inline-flex;
+    align-items: center;
+    padding: .45rem .8rem;
+    border: 1px solid var(--shell-border);
+    border-radius: 999px;
+    color: var(--shell-muted);
+    background: var(--shell-surface);
+    font-size: .9rem;
+    text-decoration: none;
+    transition: border-color .2s ease, color .2s ease, transform .2s ease;
+}
+
+.works-back-link:hover {
+    border-color: currentColor;
+    color: var(--shell-text);
+    transform: translateX(-2px);
+}
+
+.works-viewer__title {
+    margin: 0 0 1rem;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.works-viewer__frame {
+    display: block;
+    width: 100%;
+    min-height: 70vh;
+    height: calc(100vh - 150px);
+    border: 1px solid var(--shell-border);
+    border-radius: 10px;
+    background: #fff;
+}
+
+@media (max-width: 600px) {
+    .works-shell__header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .works-shell__header nav {
+        gap: .8rem;
+    }
+
+    .works-viewer__frame {
+        min-height: 75vh;
+        height: 75vh;
+        border-radius: 6px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .works-index__header p,
+    .works-card p {
+        color: #d0d0d3;
+    }
+
+    .works-shell {
+        --shell-bg: #1d1e20;
+        --shell-surface: #2e2e33;
+        --shell-text: #eee;
+        --shell-muted: #aaa;
+        --shell-border: #444;
+    }
+}
