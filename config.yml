@@ -7,6 +7,11 @@ theme: PaperMod
 enableEmoji: true
 enableRobotsTXT: true
 
+security:
+  allowContent:
+    - '^text/markdown$'
+    - '^text/html$'
+
 minify:
   disableXML: true
   minifyOutput: true

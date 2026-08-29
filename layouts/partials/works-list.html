@@ -1,0 +1,32 @@
+{{- $page := .Page -}}
+{{- $works := site.GetPage "/works" -}}
+{{- with $works }}
+<section class="works-index" aria-labelledby="works-index-title">
+    <header class="works-index__header">
+        {{- if eq ($page.Param "worksHeadingLevel" | default $.HeadingLevel) "h1" }}
+        <h1 id="works-index-title"><a href="{{ .RelPermalink }}">HTML作品</a></h1>
+        {{- else }}
+        <h2 id="works-index-title"><a href="{{ .RelPermalink }}">HTML作品</a></h2>
+        {{- end }}
+        <p>調べ物や実験から作った、小さなHTMLページの一覧です。</p>
+    </header>
+
+    {{- if .RegularPages }}
+    <div class="works-grid">
+        {{- range .RegularPages.ByTitle }}
+        <article class="works-card">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            {{- with .Description }}
+            <p>{{ . }}</p>
+            {{- else }}
+            <p>独立したHTMLページとして表示します。</p>
+            {{- end }}
+            <a class="works-card__link" href="{{ .RelPermalink }}">ページを見る&nbsp;→</a>
+        </article>
+        {{- end }}
+    </div>
+    {{- else }}
+    <p class="works-empty">HTML作品はまだありません。</p>
+    {{- end }}
+</section>
+{{- end }}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ site.Language.Lang | default "ja" }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }} | {{ site.Title }}</title>
+    <link rel="stylesheet" href="{{ "css/works.css" | relURL }}">
+</head>
+<body class="works-shell">
+    {{- $home := site.Home.RelPermalink -}}
+    {{- $works := site.GetPage "/works" -}}
+    <header class="works-shell__header">
+        <a class="works-shell__brand" href="{{ $home }}">{{ site.Title }}</a>
+        <nav aria-label="HTML作品のナビゲーション">
+            <a href="{{ $home }}">ホーム</a>
+            <a href="{{ $works.RelPermalink }}">HTML一覧</a>
+        </nav>
+    </header>
+    <main class="works-shell__main">
+        {{- block "main" . }}{{ end }}
+    </main>
+</body>
+</html>

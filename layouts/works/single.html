@@ -1,0 +1,19 @@
+{{- define "main" }}
+{{- $works := site.GetPage "/works" -}}
+<section class="works-viewer" aria-labelledby="works-viewer-title">
+    <div class="works-viewer__topline">
+        <a class="works-back-link" href="{{ $works.RelPermalink }}">← 作品一覧</a>
+    </div>
+    <h1 id="works-viewer-title" class="works-viewer__title">{{ .Title }}</h1>
+    <iframe
+        id="works-viewer-frame"
+        class="works-viewer__frame"
+        title="{{ .Title }}"
+        ></iframe>
+    <script>
+        const encodedHtml = "{{ .RawContent | base64Encode }}";
+        const bytes = Uint8Array.from(window.atob(encodedHtml), character => character.charCodeAt(0));
+        document.getElementById("works-viewer-frame").srcdoc = new TextDecoder().decode(bytes);
+    </script>
+</section>
+{{- end }}
