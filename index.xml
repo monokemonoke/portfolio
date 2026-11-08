@@ -16,6 +16,15 @@
     </item>
     
     <item>
+      <title>LLMのMBTI回答傾向を比較</title>
+      <link>https://monokemonoke.github.io/portfolio/works/llm-mbti/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://monokemonoke.github.io/portfolio/works/llm-mbti/</guid>
+      <description>OpenCode GoとJevの8モデルに日本語93問を回答させた比較レポートです。</description>
+    </item>
+    
+    <item>
       <title>同じ会社を、どう見つける？ ― 名寄せの小さな教科書</title>
       <link>https://monokemonoke.github.io/portfolio/works/preview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
