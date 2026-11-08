@@ -42,6 +42,23 @@ svg{display:block;width:100%;max-height:640px;margin:20px 0}.axis-label{font-fam
 .point-label{display:block;font-size:13px;fill:#292724}
 .map-hint{font-size:12px;margin:4px 0;color:#70665c}
 @media(min-width:950px){.map-hint{display:none}}
+
+/* Mobile content fits the viewport; only the plot pans horizontally. */
+@media(max-width:700px){
+body{width:100%;min-width:0;overflow-wrap:anywhere}
+.model-comparison-table,.model-comparison-table tbody,.model-comparison-table tr,.model-comparison-table td{width:100%;min-width:0;max-width:100%}
+.model-comparison-table code{white-space:normal;overflow-wrap:anywhere}
+.axis-row{grid-template-columns:74px minmax(0,1fr) 74px;font-size:12px;gap:6px;min-height:48px}
+.axis-count{font-size:11px}.record-status{display:block;font-size:12px}
+.answer-table{display:table;table-layout:fixed;width:100%;max-width:100%;overflow:visible}
+.answer-table th,.answer-table td{width:auto;min-width:0;overflow-wrap:anywhere;font-size:13px;padding:10px 6px}
+.answer-table th:first-child{width:55%}.answer-table tbody td{width:45%}
+.waffle-legend{display:flex;flex-wrap:wrap;margin:4px 0 0;gap:8px}
+.response-waffle{flex-wrap:wrap}.waffle-unit{width:13px;height:13px;flex:none}
+.question-heading h3 small{display:block;margin:4px 0 0}
+.question-option{min-width:0;padding:10px;line-height:1.7}
+.question-options{gap:8px}.chart-scroll{width:100%;max-width:100%;min-width:0}
+}
 </style>
 <body><h1>OpenCode Go MBTIモデル比較</h1>
 <p>執筆日時: 2026年11月8日</p>
