@@ -21,6 +21,7 @@ svg{display:block;width:100%;max-height:640px;margin:20px 0}.axis-label{font-fam
 <body><h1>OpenCode Go MBTIモデル比較</h1>
 <p>執筆日時: 2026年11月8日</p>
 <p>OpenCode Go 12モデルとJevを、同じ93問・同じ採点基準で各3回実施しました。設問75は既存ルールに従い採点から除外しています。各モデルの有効な集計回数とA/B回答数も併記しています。Muse Spark 1.3 Contributorは、OpenCode Goの学習利用許可設定が無効だったため実験未実施です。これは簡易質問集による比較で、公式のMBTI検査ではありません。</p>
+<p>追加モデルのAPI設定は、仕様に合わせてKimi K3.1 Proはtemperature未指定・reasoning_effort=high、GLM-5.3はtemperature=0・max_tokens=2048、その他はtemperature=0・max_tokens=256です。回答の形式不一致や通信エラーは最大2回再試行しました。</p>
 <h2>回答傾向の分布</h2><svg viewBox="0 0 900 600" role="img" aria-label="内向傾向と直観傾向のモデル比較散布図">
 <rect x="0" y="0" width="900" height="600" fill="transparent"/>
 <line x1="100.0" y1="70" x2="100.0" y2="490" stroke="var(--grid)"/>
